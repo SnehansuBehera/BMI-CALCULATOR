@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+
+    background-color: darkslategray;
+    text-align: center;
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introToApp {
+    text-align: left;
+    padding: 10%;
+}
+
+.introToApp p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+#results {
+    background-color: rgba(248, 246, 246, 0.057);
+    padding: 1rem;
+    border: 2px solid rgba(172, 255, 47, 0.566);
+    border-radius: 1rem;
+    margin: 1.5rem auto;
+
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 4rem;
+    color: #35a8ebe1;
+    text-shadow: 2px 2px black;
+}
+
+.btn {
+    margin: 0.1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid white;
+    background-color: white;
+    color: #35a8ebe1;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+    cursor: pointer;
+}
+
+input {
+    width: 90%;
+    padding: 5px 14px;
+    border: 0.1rem solid #201f1d3e;
+    background-color: rgba(244, 243, 243, 0.283);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, .4);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+input:focus {
+    border: 2px solid rgba(0, 0, 0, 0.822);
+    background-color: rgba(244, 243, 243, 0.283);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #35a8ebe1;
+    padding: 2%;
+    color: #f8f7f7f5;
+    box-shadow: 5px 4px 4px 3px rgba(0, 0, 0, .4);
+    height: 40vh;
+}
+
+form h3 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+}
+
+form p {
+    text-align: left;
+    padding: 0.3rem 1rem;
+}
+
+
+.subCont {
+    display: flex;
+    min-width: 100%;
+    float: none;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+
+}
+
+@media (max-width: 1200px) {
+    .subCont {
+        width: 50%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+    form {
+        margin-bottom: 5%;
+    }
+}
+
+@media (max-width: 960px) {
+    .subCont {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 340px) {
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .introToApp p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: 200;
+    }
+
+}
